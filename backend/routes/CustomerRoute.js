@@ -1,6 +1,6 @@
 const express = require('express');
 const Router = express.Router();
-const customerSignUp = require('../Controllers/CustomerAuth');
+const customerSignUp = require('../controllers/CustomerAuth');
 
 Router.use('/customer/signup', customerSignUp);
 
