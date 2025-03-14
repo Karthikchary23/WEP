@@ -24,6 +24,10 @@ const CustomerSchema = new mongoose.Schema({
     }, password:{
         type: String,
         required: true
+    }, isCustomer:{
+        type: Boolean,
+        required: true,
+        default: false
     }
 })
 const Customer = mongoose.model('Customer', CustomerSchema);

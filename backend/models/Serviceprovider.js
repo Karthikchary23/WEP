@@ -56,6 +56,14 @@ const serviceProviderSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  serviceprovider:{
+    type: Boolean,
+    default: true
+  },
+  serviceprovider:{
+    type: Boolean,
+    default: true
+  }
 });
 
 module.exports = mongoose.model('ServiceProvider', serviceProviderSchema);
